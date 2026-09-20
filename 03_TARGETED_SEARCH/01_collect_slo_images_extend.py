@@ -41,7 +41,8 @@ GEMINI_EMPTY_RETRIES = 4
 GEMINI_ROUND_MAX = 6
 
 # Ollama / Gemma
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://kt-gpu5:11435/api/chat")
+OLLAMA_PORT = ""
+OLLAMA_URL = os.getenv("OLLAMA_URL", OLLAMA_PORT )
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma3:27b")
 SLEEP_BETWEEN_GEMMA_CALLS = 0.0
 
